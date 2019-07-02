@@ -1,30 +1,67 @@
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact me</title>
-  </head>
-  <body>
-<form  action="mailto:123@gmail.com?subject=feedback:" method="post" enctype="text/plain">
 
-  <address>
-    <a href="mailto:123@gmail.com?subject=feedback">email me</a>
-  </address><br>
-  <label>First Name</label>
-  <input type="text" name="firstname" value=""><br> <br>
-  <label>Last Name</label>
-  <input type="text" name="lastname" value=""><br><br><br>
-  <label>gender:</label>
-  <label>male</label>
-  <input type="checkbox" name="gender" value="">
-  <label>female</label>
-  <input type="checkbox" name="gender" value="">
-  <br> <br><br>
-  <input type="submit"  value="submit">
+<head>
+  <meta charset="utf-8">
+  <title>Contact me</title>
+</head>
 
-</form>
+<body>
+  <form action="mailto:123@gmail.com?subject=feedback:" method="post" enctype="text/plain">
 
-  </body>
+    <address>
+      <a href="mailto:123@gmail.com?subject=feedback">email me</a>
+    </address><br>
+    <label>First Name</label>
+    <input type="text" name="firstname" value=""><br> <br>
+    <label>Last Name</label>
+    <input type="text" name="lastname" value=""><br><br><br>
+    <label>gender:</label>
+    <label>male</label>
+    <input type="checkbox" name="gender" value="male">
+    <label>female</label>
+    <input type="checkbox" name="gender" value="female">
+    <br> <br><br>
+
+
+
+    <label for="mybrowsers"> Selct your browsers </label>
+    <input list="browsers" name="mybrowsers" id="abc" />
+    <datalist id="browsers">
+
+
+      <option value="firefox"></option>
+      <option value="chrome"></option>
+      <option value="opera"></option>
+
+
+      <option value="internet explorer"></option>
+      <option value="safari"></option>
+
+
+    </datalist>
+    <br>
+    <br>
+    <br>
+    <label for="fruits">Select your fav fruit</label>
+    <select name="fruits">
+      <optgroup label="summer">
+        <option>mango</option>
+        <option>peach</option>
+      </optgroup>
+      <optgroup label="winter">
+        <option>orange</option>
+        <option>banana</option>
+      </optgroup>
+    </select>
+    <br>
+
+    <br><br>
+
+    <input type="submit" value="submit">
+
+  </form>
+
+</body>
+
 </html>
